@@ -1,0 +1,21 @@
+global:
+git:
+repo: git@github.com:tnstamp1/forgeops.git
+branch: master
+sedFilter: "-e s/dev.mycompany.com/qa.mycompany.com/g"
+configPath:
+am: default/am/empty-import
+useTLS: false
+domain: .example.com
+openam:
+image:
+repository: tnstamp/openam6
+tag: 0.1
+amster:
+image:
+repository: tnstamp/amster6
+tag: 0.1
+opendj:
+image:
+repository: tnstamp/opendj6
+tag: 0.1
